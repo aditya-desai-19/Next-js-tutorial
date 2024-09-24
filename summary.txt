@@ -1,0 +1,7 @@
+Chapter 9: Streaming
+	-Advantages
+		- components are loaded in parallel to improve loading time of page
+	
+	-loading.tsx file is automatically rendered when page is taking time to load
+	
+	-creating a folder with parenthesis like (<name>) this won't be included in url
