@@ -16,14 +16,22 @@ export default function Page() {
 					<p
 						className={`text-xl text-gray-800 md:text-3xl md:leading-normal ${lusitana}`}
 					>
+
+
+
+
+
+						
 						<strong>Welcome to Acme.</strong> This is the example
 						for the{" "}
 						<a
 							href="https://nextjs.org/learn/"
 							className="text-blue-500"
 						>
-							Next.js Learn Course
+							Next.js L     earn Course
 						</a>
+
+
 						, brought to you by Vercel.
 					</p>
 					<Link
@@ -33,9 +41,11 @@ export default function Page() {
 						<span>Log in</span>{" "}
 						<ArrowRightIcon className="w-5 md:w-6" />
 					</Link>
+
 				</div>
 				<div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
 					{/* Add Hero Images Here */}
+
 					<Image
 						src="/hero-desktop.png"
 						width={1000}
