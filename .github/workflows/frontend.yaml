@@ -25,3 +25,15 @@ jobs:
 
       - name: Run Prettier
         run: npx prettier --write '**/*.{js,ts,tsx,json,md,css}'
+
+      - name: Commit changes
+        run: |
+          git config --local user.name "GitHub Actions"
+          git config --local user.email "actions@github.com"
+          git add .
+          git commit -m "Apply Prettier formatting" || echo "No changes to commit"
+
+      - name: Push changes
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
